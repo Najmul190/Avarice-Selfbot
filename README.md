@@ -67,7 +67,7 @@ Please note that some commands may require certain permissions or have restricti
 
 # Installation
 
-Using this selfbot is incredibly simple and requires no knowledge of any coding. Simply download the latest release from the [releases page](https://github.com/Najmul190/Avarice-Selfbot/releases/tag/v1.0.0) and extract the zip file and run `Avarice.exe` which will help you setup.
+Using this selfbot is incredibly simple and requires no knowledge of any coding. Simply download the latest release from the [releases page](https://github.com/Najmul190/Avarice-Selfbot/releases/) and extract the zip file and run `Avarice.exe` which will help you setup.
 
 It may trigger your anti-virus due to the way I converted the Python file into an executable using pyinstaller, but it is completely safe and is a false-positive - just allow it. If you know how to fix this please tell me as I have no clue as to why it's seen as a virus.
 
@@ -75,7 +75,7 @@ It may trigger your anti-virus due to the way I converted the Python file into a
 
 If you don't feel like using `Avarice.exe` to setup the selfbot, you can manually install it. This is also simple but with a few more added steps.
 
-1. Ensure you have the latest Python installed and then download the latest release from the [releases page](https://github.com/Najmul190/Avarice-Selfbot/archive/refs/tags/v1.0.0.zip) by clicking on the `Source Code (zip)` button.
+1. Ensure you have the latest Python installed and then download the latest release from the [releases page](https://github.com/Najmul190/Avarice-Selfbot/releases/) by clicking on the `Source Code (zip)` button.
 2. Extract the zip file and open the folder.
 3. If you're on windows, you can simply run `run.bat` to install the dependencies and also get the selfbot running. If you're on linux you'll have to follow the steps below.
 4. You can always repeat step 3 to turn on the selfbot.
