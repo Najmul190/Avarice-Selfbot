@@ -26,7 +26,7 @@ The most powerful and versatile free selfbot for Discord, created by [Najmul190]
 
 # Preview of some features
 
-## Commands Preview
+Here's a preview of a few select features:
 
 ![Preview of a bunch of commands](https://cdn.discordapp.com/attachments/918997350238797855/1122298718184550500/commands.gif)
 
@@ -44,7 +44,7 @@ The most powerful and versatile free selfbot for Discord, created by [Najmul190]
 
 ## Console Preview
 
-to be added on github
+https://github.com/Najmul190/Avarice-Selfbot/assets/68229089/b0dd4da7-d693-446c-af55-398c33237ea7
 
 # Usage
 
