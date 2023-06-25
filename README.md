@@ -28,19 +28,21 @@ The most powerful and versatile free selfbot for Discord, created by [Najmul190]
 
 Here's a preview of a few select features:
 
-![Preview of a bunch of commands](https://cdn.discordapp.com/attachments/918997350238797855/1122298718184550500/commands.gif)
+## Commands Preview
+
+https://github.com/Najmul190/Avarice-Selfbot/assets/68229089/6e9a4d01-4dd2-4802-801a-07d99ad489e5
 
 ## AI Chatbot Preview
 
-![Preview of the AI chatbot](https://cdn.discordapp.com/attachments/918997350238797855/1122300628551618601/chatbotpreview.gif)
+https://github.com/Najmul190/Avarice-Selfbot/assets/68229089/af6f5b99-9d30-425d-8ac2-3309bcf473be
 
 ## AI Image Generation Preview
 
-![Preview of the AI image generation](https://cdn.discordapp.com/attachments/918997350238797855/1122475140761010216/imagegeneration.gif)
+https://github.com/Najmul190/Avarice-Selfbot/assets/68229089/69778228-f630-45bf-a133-48b5e6cde69b
 
 ## A Raid Command Preview
 
-![Preview of the webhook spam command](https://cdn.discordapp.com/attachments/918997350238797855/1122477127451803679/webhookspam.gif)
+https://github.com/Najmul190/Avarice-Selfbot/assets/68229089/73f1dd7f-5cd1-4c81-a119-990589a2675d
 
 ## Console Preview
 
