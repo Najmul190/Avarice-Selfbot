@@ -1,0 +1,27 @@
+{
+  "token": "",
+  "prefix": ">",
+  "delete_timeout": 45,
+
+  "afk_message": "Sorry, I'm currently not available!",
+
+  "webhooks": "True",
+  "spyWebhook": "True",
+  "ticketWebhook": "False",
+  "messageLogs": "True",
+  "guildLogs": "True",
+  "relationshipLogs": "True",
+  "roleLogs": "False",
+  "pingLogs": "False",
+  "ghostpingLogs": "True",
+
+  "wordNotifications": "False",
+  "notificationWords": [""],
+
+  "webhookSpam": {
+    "message": "RAIDED WITH AVARICE @everyone",
+    "avatar_url": ""
+  },
+
+  "debugMode": "False"
+}
