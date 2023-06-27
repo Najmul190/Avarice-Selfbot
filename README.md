@@ -69,7 +69,7 @@ Please note that some commands may require certain permissions or have restricti
 
 Using this selfbot is incredibly simple and requires no knowledge of any coding. Simply download the latest release from the [releases page](https://github.com/Najmul190/Avarice-Selfbot/releases/) and extract the zip file and run `Avarice.exe` which will help you setup.
 
-It may trigger your anti-virus due to the way I converted the Python file into an executable using pyinstaller, but it is completely safe and is a false-positive - just allow it. If you know how to fix this please tell me as I have no clue as to why it's seen as a virus.
+It may trigger your anti-virus due to the way I converted the Python file into an executable using pyinstaller, but it is completely safe and is a false-positive. If you know how to fix this please tell me as I have no clue as to why it's seen as a virus.
 
 ## Manual Installation (Using Source Code)
 
