@@ -1,3 +1,5 @@
-1.0.0
+1.0.1
 
-Release of Avarice Selfbot.
+- Fixed setupwebhooks command, now you have to use it in an existing server that you have admin in.
+- Made shutdown command better for users using the Python file.
+- Fixed deletechannels command having the wrong delete count.

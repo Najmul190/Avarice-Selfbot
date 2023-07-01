@@ -3729,9 +3729,13 @@ async def deletechannels(ctx, server: int = None):
 
     server = bot.get_guild(server)
 
+    count = 0
+
     for channel in server.channels:
         try:
             await channel.delete()
+
+            count += 1
 
             await asyncio.sleep(1.25)
         except:
@@ -3739,7 +3743,7 @@ async def deletechannels(ctx, server: int = None):
 
     log_message(
         "deletechannels",
-        f"Successfully deleted {len(server.channels)} channels.",
+        f"Successfully deleted {count} channels.",
         Fore.GREEN,
     )
 
@@ -5356,6 +5360,8 @@ async def shutdown(ctx):
 
     await bot.close()
 
+    os._exit(0)
+
 
 @bot.command(aliases=["reboot"], description="Restarts the selfbot.")
 async def restart(ctx):
@@ -5472,11 +5478,21 @@ async def uptime(ctx):
     )
 
 
-@bot.command(description="Creates a server and sets up webhooks for notifications.")
+@bot.command(
+    description="Edits the current server and sets it for your webhooks to allow notifications."
+)
 async def setupwebhooks(ctx):
-    temp = await ctx.message.edit(content="Creating server...")
+    temp = await ctx.message.edit(content="Editing server...")
 
-    guild = await bot.create_guild(name="Avarice Webhooks")
+    guild = ctx.guild
+
+    if not ctx.author.guild_permissions.administrator:
+        await temp.edit(
+            content=":x: | You need to have administrator permissions. Make sure you're running this command in your own server."
+        )
+
+        await delete_after_timeout(temp)
+        return
 
     with open("data/avarice.png", "rb") as f:
         icon = f.read()
@@ -5487,10 +5503,11 @@ async def setupwebhooks(ctx):
 
     await asyncio.sleep(0.5)
 
-    for channel in guild.channels:
-        await channel.delete()
+    category = await guild.create_category("Avarice Logs")
 
-    channel = await guild.create_text_channel("spy")
+    await asyncio.sleep(0.5)
+
+    channel = await guild.create_text_channel("spy", category=category)
     webhook = await channel.create_webhook(name="Spy Logs", avatar=icon)
 
     with open("data/webhooks.txt", "w") as f:
@@ -5501,7 +5518,7 @@ async def setupwebhooks(ctx):
 
     await asyncio.sleep(1)
 
-    channel = await guild.create_text_channel("new-tickets")
+    channel = await guild.create_text_channel("new-tickets", category=category)
     webhook = await channel.create_webhook(name="Ticket Logs", avatar=icon)
 
     with open("data/webhooks.txt", "a") as f:
@@ -5509,7 +5526,7 @@ async def setupwebhooks(ctx):
 
     await asyncio.sleep(1)
 
-    channel = await guild.create_text_channel("message-logs")
+    channel = await guild.create_text_channel("message-logs", category=category)
     webhook = await channel.create_webhook(name="Message Logs", avatar=icon)
 
     with open("data/webhooks.txt", "a") as f:
@@ -5517,7 +5534,7 @@ async def setupwebhooks(ctx):
 
     await asyncio.sleep(1)
 
-    channel = await guild.create_text_channel("relationship-logs")
+    channel = await guild.create_text_channel("relationship-logs", category=category)
     webhook = await channel.create_webhook(name="Relationship Logs", avatar=icon)
 
     with open("data/webhooks.txt", "a") as f:
@@ -5525,7 +5542,7 @@ async def setupwebhooks(ctx):
 
     await asyncio.sleep(1)
 
-    channel = await guild.create_text_channel("guild-logs")
+    channel = await guild.create_text_channel("guild-logs", category=category)
     webhook = await channel.create_webhook(name="Guild Logs", avatar=icon)
 
     with open("data/webhooks.txt", "a") as f:
@@ -5533,7 +5550,7 @@ async def setupwebhooks(ctx):
 
     await asyncio.sleep(1)
 
-    channel = await guild.create_text_channel("role-logs")
+    channel = await guild.create_text_channel("role-logs", category=category)
     webhook = await channel.create_webhook(name="Role Logs", avatar=icon)
 
     with open("data/webhooks.txt", "a") as f:
@@ -5541,7 +5558,7 @@ async def setupwebhooks(ctx):
 
     await asyncio.sleep(1)
 
-    channel = await guild.create_text_channel("ping-logs")
+    channel = await guild.create_text_channel("ping-logs", category=category)
     webhook = await channel.create_webhook(name="Ping Logs", avatar=icon)
 
     with open("data/webhooks.txt", "a") as f:
@@ -5549,7 +5566,7 @@ async def setupwebhooks(ctx):
 
     await asyncio.sleep(1)
 
-    channel = await guild.create_text_channel("ghostping-logs")
+    channel = await guild.create_text_channel("ghostping-logs", category=category)
     webhook = await channel.create_webhook(name="Ghostping Logs", avatar=icon)
 
     with open("data/webhooks.txt", "a") as f:
@@ -5557,19 +5574,19 @@ async def setupwebhooks(ctx):
 
     await asyncio.sleep(1)
 
-    channel = await guild.create_text_channel("word-notifications")
+    channel = await guild.create_text_channel("word-notifications", category=category)
     webhook = await channel.create_webhook(name="Word Notifications", avatar=icon)
 
     with open("data/webhooks.txt", "a") as f:
         f.write(f"Word Notifications: {webhook.url}\n")
 
     await temp.edit(
-        content=":white_check_mark: | Created webhook server and log channels."
+        content=":white_check_mark: | Setup webhook server and log channels."
     )
 
     log_message(
         "setupwebhooks",
-        f"Created webhook server and logs.",
+        f"Successfully setup webhook server and logs.",
         Fore.GREEN,
     )
 
