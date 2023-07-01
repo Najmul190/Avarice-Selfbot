@@ -26,25 +26,27 @@ The most powerful and versatile free selfbot for Discord, created by [Najmul190]
 
 # Preview of some features
 
+Here's a preview of a few select features:
+
 ## Commands Preview
 
-![Preview of a bunch of commands](https://cdn.discordapp.com/attachments/918997350238797855/1122298718184550500/commands.gif)
+https://github.com/Najmul190/Avarice-Selfbot/assets/68229089/6e9a4d01-4dd2-4802-801a-07d99ad489e5
 
 ## AI Chatbot Preview
 
-![Preview of the AI chatbot](https://cdn.discordapp.com/attachments/918997350238797855/1122300628551618601/chatbotpreview.gif)
+https://github.com/Najmul190/Avarice-Selfbot/assets/68229089/af6f5b99-9d30-425d-8ac2-3309bcf473be
 
 ## AI Image Generation Preview
 
-![Preview of the AI image generation](https://cdn.discordapp.com/attachments/918997350238797855/1122475140761010216/imagegeneration.gif)
+https://github.com/Najmul190/Avarice-Selfbot/assets/68229089/69778228-f630-45bf-a133-48b5e6cde69b
 
 ## A Raid Command Preview
 
-![Preview of the webhook spam command](https://cdn.discordapp.com/attachments/918997350238797855/1122477127451803679/webhookspam.gif)
+https://github.com/Najmul190/Avarice-Selfbot/assets/68229089/73f1dd7f-5cd1-4c81-a119-990589a2675d
 
 ## Console Preview
 
-to be added on github
+https://github.com/Najmul190/Avarice-Selfbot/assets/68229089/b0dd4da7-d693-446c-af55-398c33237ea7
 
 # Usage
 
@@ -65,15 +67,15 @@ Please note that some commands may require certain permissions or have restricti
 
 # Installation
 
-Using this selfbot is incredibly simple and requires no knowledge of any coding. Simply download the latest release from the [releases page](https://github.com/Najmul190/Avarice-Selfbot/releases/tag/v1.0.0) and extract the zip file and run `Avarice.exe` which will help you setup.
+Using this selfbot is incredibly simple and requires no knowledge of any coding. Simply download the latest release from the [releases page](https://github.com/Najmul190/Avarice-Selfbot/releases/) and extract the zip file and run `Avarice.exe` which will help you setup.
 
-It may trigger your anti-virus due to the way I converted the Python file into an executable using pyinstaller, but it is completely safe and is a false-positive - just allow it. If you know how to fix this please tell me as I have no clue as to why it's seen as a virus.
+It may trigger your anti-virus due to the way I converted the Python file into an executable using pyinstaller, but it is completely safe and is a false-positive. If you know how to fix this please tell me as I have no clue as to why it's seen as a virus.
 
 ## Manual Installation (Using Source Code)
 
 If you don't feel like using `Avarice.exe` to setup the selfbot, you can manually install it. This is also simple but with a few more added steps.
 
-1. Ensure you have the latest Python installed and then download the latest release from the [releases page](https://github.com/Najmul190/Avarice-Selfbot/archive/refs/tags/v1.0.0.zip) by clicking on the `Source Code (zip)` button.
+1. Ensure you have the latest Python installed and then download the latest release from the [releases page](https://github.com/Najmul190/Avarice-Selfbot/releases/) by clicking on the `Source Code (zip)` button.
 2. Extract the zip file and open the folder.
 3. If you're on windows, you can simply run `run.bat` to install the dependencies and also get the selfbot running. If you're on linux you'll have to follow the steps below.
 4. You can always repeat step 3 to turn on the selfbot.
