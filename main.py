@@ -12,7 +12,7 @@ with open("config.json", "r") as cjson:
 
 ######################################### Console #########################################
 
-currentVersion = "1.0.0"
+currentVersion = "1.0.1"
 
 init(autoreset=True)
 
