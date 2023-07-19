@@ -1,3 +1,7 @@
+# Archived due to no traction
+
+
+
 # Avarice Selfbot
 
 The most powerful and versatile free selfbot for Discord, created by [Najmul190](https://github.com/Najmul190). This selfbot is designed to enhance your Discord experience with a wide range of features and commands with ease, requiring no knowledge of any coding. From moderation tools to fun and trolling commands, this selfbot has it all and is always expanding. Take control of your Discord account and enjoy the convenience and entertainment provided by this selfbot - completely free of charge.
